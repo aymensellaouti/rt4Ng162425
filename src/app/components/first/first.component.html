@@ -1,0 +1,8 @@
+<p [hidden]="isHidden">{{name}} works!</p>
+
+<input #myInput (change)="changeMessage(myInput.value)" type="text">
+
+<p>Le contenu de l'input est : {{ message }}</p>
+
+<button (click)="showHide()">show / Hide</button>
+<app-second></app-second>
