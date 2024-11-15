@@ -1,0 +1,8 @@
+<div
+  (click)="interrupteur()"
+  class="lampe"
+  [ngClass]="{
+    'on': on,
+    'off': !on
+  }"
+>Lampe</div>

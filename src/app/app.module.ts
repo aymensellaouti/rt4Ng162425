@@ -9,6 +9,8 @@ import { TwoComponent } from './components/two/two.component';
 import { FormsModule } from '@angular/forms';
 import { PereComponent } from './communinicationInterComonents/pere/pere.component';
 import { FilsComponent } from './communinicationInterComonents/fils/fils.component';
+import { NgStyleComponent } from './directives/ng-style/ng-style.component';
+import { NgClassComponent } from './directives/ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FilsComponent } from './communinicationInterComonents/fils/fils.compone
     SecondComponent,
     TwoComponent,
     PereComponent,
-    FilsComponent
+    FilsComponent,
+    NgStyleComponent,
+    NgClassComponent
   ],
   imports: [
     BrowserModule,
