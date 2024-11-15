@@ -5,16 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './components/first/first.component';
 import { SecondComponent } from './components/second/second.component';
+import { TwoComponent } from './components/two/two.component';
+import { FormsModule } from '@angular/forms';
+import { PereComponent } from './communinicationInterComonents/pere/pere.component';
+import { FilsComponent } from './communinicationInterComonents/fils/fils.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    TwoComponent,
+    PereComponent,
+    FilsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
