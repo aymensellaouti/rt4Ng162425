@@ -11,6 +11,7 @@ import { PereComponent } from './communinicationInterComonents/pere/pere.compone
 import { FilsComponent } from './communinicationInterComonents/fils/fils.component';
 import { NgStyleComponent } from './directives/ng-style/ng-style.component';
 import { NgClassComponent } from './directives/ng-class/ng-class.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgClassComponent } from './directives/ng-class/ng-class.component';
     PereComponent,
     FilsComponent,
     NgStyleComponent,
-    NgClassComponent
+    NgClassComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

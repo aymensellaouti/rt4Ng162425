@@ -3,6 +3,12 @@
   class="lampe"
   [ngClass]="{
     'on': on,
-    'off': !on
+    'off':!on
   }"
 >Lampe</div>
+
+<p [in]="'blue'" [out]="'white'" appHighlight>test</p>
+<p [in]="'black'" [out]="'white'" appHighlight>test</p>
+<p [in]="'white'" [out]="'black'" appHighlight>test</p>
+<p [in]="'white'" [out]="'red'" appHighlight>test</p>
+<p appHighlight>test</p>
