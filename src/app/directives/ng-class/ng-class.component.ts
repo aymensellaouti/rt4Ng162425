@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LoggerService } from 'src/app/services/logger.service';
 
 @Component({
   selector: 'app-ng-class',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class NgClassComponent {
   on = true;
+  today = new Date();
+  logger = inject(LoggerService);
+  // constructor(public logger: LoggerService) {}
   interrupteur() {
     this.on = ! this.on;
   }

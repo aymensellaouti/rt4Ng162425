@@ -12,6 +12,9 @@ import { FilsComponent } from './communinicationInterComonents/fils/fils.compone
 import { NgStyleComponent } from './directives/ng-style/ng-style.component';
 import { NgClassComponent } from './directives/ng-class/ng-class.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { BtcToUsdPipe } from './pipes/btc-to-usd.pipe';
+import { LoggerService } from './services/logger.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { HighlightDirective } from './directives/highlight.directive';
     FilsComponent,
     NgStyleComponent,
     NgClassComponent,
-    HighlightDirective
+    HighlightDirective,
+    BtcToUsdPipe,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

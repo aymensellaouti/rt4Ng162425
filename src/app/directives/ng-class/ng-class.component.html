@@ -6,7 +6,11 @@
     'off':!on
   }"
 >Lampe</div>
-
+<div class="alert alert-warning">
+  {{today | date:'medium'  | uppercase}}
+  <p>{{1 | btcToUsd | currency}}</p>
+  <p>{{1 | btcToUsd: false}}</p>
+</div>
 <p [in]="'blue'" [out]="'white'" appHighlight>test</p>
 <p [in]="'black'" [out]="'white'" appHighlight>test</p>
 <p [in]="'white'" [out]="'black'" appHighlight>test</p>
