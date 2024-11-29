@@ -15,6 +15,9 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { BtcToUsdPipe } from './pipes/btc-to-usd.pipe';
 import { LoggerService } from './services/logger.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { GameComponent } from './components/game/game.component';
+import { NF404Component } from './components/nf404/nf404.component';
+import { TestFormComponent } from './form/test-form/test-form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     NgClassComponent,
     HighlightDirective,
     BtcToUsdPipe,
-    NavbarComponent
+    NavbarComponent,
+    GameComponent,
+    NF404Component,
+    TestFormComponent
   ],
   imports: [
     BrowserModule,

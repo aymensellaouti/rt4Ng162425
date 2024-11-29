@@ -1,0 +1,8 @@
+<p>{{message}}</p>
+
+
+<input type="number" [(ngModel)]="try" class="form-control">
+
+<button (click)="play()" [disabled]="!canPlay" class="btn btn-danger">Play</button>
+
+<button class="btn btn-success" (click)="playAgain()">Play again</button>
