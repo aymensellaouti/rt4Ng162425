@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { GameComponent } from './components/game/game.component';
 import { NF404Component } from './components/nf404/nf404.component';
 import { TestFormComponent } from './form/test-form/test-form.component';
+import { TestObservableComponent } from './rxjs/test-observable/test-observable.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +36,14 @@ import { TestFormComponent } from './form/test-form/test-form.component';
     NavbarComponent,
     GameComponent,
     NF404Component,
-    TestFormComponent
+    TestFormComponent,
+    TestObservableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
