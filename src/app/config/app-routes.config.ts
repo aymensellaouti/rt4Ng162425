@@ -2,5 +2,7 @@
 export const APP_ROUTES = {
   game: 'game',
   two: 'two',
-  home: ''
-}
+  home: '',
+  addUser: 'user/add',
+  listUser: 'user',
+};

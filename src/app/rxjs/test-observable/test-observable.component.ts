@@ -11,7 +11,7 @@ export class TestObservableComponent {
   countDown$: Observable<number>;
   count: number | string = "count down will start immediately";
   apiService = inject(ApiService);
-  first$ = this.apiService.getTodos();
+  first$ = this.apiService.getUsers();
   constructor() {
      this.countDown$ = new Observable((observer) => {
       let i = 5;

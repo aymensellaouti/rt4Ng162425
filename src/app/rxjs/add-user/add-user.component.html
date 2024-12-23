@@ -1,0 +1,7 @@
+<form #addUserForm="ngForm">
+  email : <input type="text" ngModel name="email" class="form-control">
+  password: <input type="text" ngModel name="password" class="form-control">
+  <button (click)="addUser(addUserForm.value)" class="btn btn-danger">
+    add user
+  </button>
+</form>

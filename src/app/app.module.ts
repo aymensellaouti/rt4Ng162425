@@ -20,6 +20,8 @@ import { GameComponent } from './components/game/game.component';
 import { NF404Component } from './components/nf404/nf404.component';
 import { TestFormComponent } from './form/test-form/test-form.component';
 import { TestObservableComponent } from './rxjs/test-observable/test-observable.component';
+import { AddUserComponent } from './rxjs/add-user/add-user.component';
+import { authInterceptorProvider } from './interceptors/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -37,15 +39,11 @@ import { TestObservableComponent } from './rxjs/test-observable/test-observable.
     GameComponent,
     NF404Component,
     TestFormComponent,
-    TestObservableComponent
+    TestObservableComponent,
+    AddUserComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  providers: [authInterceptorProvider],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

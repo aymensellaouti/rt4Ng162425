@@ -1,6 +1,12 @@
 <p>test-observable works!</p>
 
-{{ first$ | async | json}}
+<!-- {{ first$ | async | json}} -->
+
+<ol class="list-group">
+  <li *ngFor="let user of first$ |async" class="list-group-item">
+    {{ user.email }} : {{ user.password }}
+  </li>
+</ol>
 
 <div class="alert alert-danger">
   {{ count }}
